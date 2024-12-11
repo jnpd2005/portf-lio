@@ -1,0 +1,139 @@
+/*
+        ALUNO: JENNIFER PEREIRA DOS SANTOS
+        RU: 4896563
+*/
+/*      Definições 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+/*      Estilos 
+*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/*      Cabeçalho/header
+*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 6rem;
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border: solid 1px var(--text-color2);
+    border-color: rgb(0, 0, 0);
+}
+
+.logo {
+    font-size: 1.7rem;
+    color: rgb(250, 131, 234);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navegador {
+    display: flex;
+    gap: 1rem;
+}
+
+.navegador a {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navegador a:hover {
+    color: rgb(203, 98, 212);
+}
+
+/*      janela (Home, Sobre, Formação, Contato) 
+*/
+section {
+    min-height: 100vh;
+    padding: 6rem 6rem 2rem;
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/*      config da janela de formação 
+*/
+.formacao-item,
+.sobre-item {
+    background-color: rgb(31, 31, 31);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-color: rgb(236, 156, 223);
+    border-radius: 5px;
+}
+
+.formacao-item h2,
+.sobre-item h2 {
+    font-size: 1.8rem;
+}
+
+.formacao-item p,
+.sobre-item p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.formacao-item strong,
+.sobre-item strong {
+    font-weight: bold;
+}
+
+/*      config da foto em Home 
+*/
+.homeimagem img,
+.sobreimg img {
+    margin-top: 30px;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 5px solid rgb(6, 141, 182);
+}
+
+/*      Rodapé 
+*/
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+footer span {
+    color: hotpink;
+}
